@@ -3,6 +3,14 @@ import logoimg from "./logo.png";
 import "./style.css";
 import api from "./api.js";
 import { format } from "date-fns";
+import favicon from "./logo.png";
+
+let link =
+  document.querySelector("link[rel*='icon']") || document.createElement("link");
+link.type = "image/x-icon";
+link.rel = "shortcut icon";
+link.href = favicon;
+document.getElementsByTagName("head")[0].appendChild(link);
 
 const container = document.getElementById("content");
 
