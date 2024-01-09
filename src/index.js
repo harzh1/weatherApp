@@ -281,6 +281,21 @@ toggleButtonCelcius.addEventListener("click", () => {
     data.forecast.forecastday[3].day.maxtemp_c
   )}°C`;
 
+  wind.textContent = `${Math.round(data.current.wind_kph)}kph`;
+  visibility.textContent = `${data.current.vis_km}km`;
+
+  forecastDay1MaxWindSpeed.textContent = `Wind: ${Math.round(
+    data.forecast.forecastday[1].day.maxwind_kph
+  )} km/h`;
+
+  forecastDay2MaxWindSpeed.textContent = `Wind: ${Math.round(
+    data.forecast.forecastday[2].day.maxwind_kph
+  )} km/h`;
+
+  forecastDay3MaxWindSpeed.textContent = `Wind: ${Math.round(
+    data.forecast.forecastday[3].day.maxwind_kph
+  )} km/h`;
+
   toggleButtonCelcius.classList.add("active");
   toggleButtonFahrenheit.classList.remove("active");
 });
