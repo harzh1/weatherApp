@@ -12,7 +12,7 @@ This project is a web application that allows users to search for the weather fo
 
 ## Technologies
 
-- HTML, CSS, and JavaScript
+- HTML, CSS, JavaScript and Webpack Module
 - WeatherAPI and Giphy API
 - Promises or async/await for asynchronous operations
 
